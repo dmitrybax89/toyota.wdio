@@ -4,7 +4,11 @@ import Page from './page.js';
 class PdpPage extends Page {
 
     get firstPdpProduct() {
-        return $('ul > li:nth-child(1)')
+        return $('li.search-product-card')
+    }
+
+    get addToCartButton() {
+        return $('button*=Add to Cart')
     }
 
 }
